@@ -1,0 +1,12 @@
+{
+    "highlight.regexes": {
+        "(// Notice)(:)()": [
+            {
+                "color": "yellow"
+            },
+            {
+                "color": "red"
+            }
+        ]
+    }
+}
