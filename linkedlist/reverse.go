@@ -1,6 +1,6 @@
 package linkedlist
 
-// Notice:
+// Notice: tip for linked list
 // By creating a fake node ahead of 'head' node
 // It makes the algo more concise
 

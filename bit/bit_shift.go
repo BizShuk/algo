@@ -1,6 +1,6 @@
 package bit
 
-// Notice:
+// Notice: bit operation
 // >> , shift 1 bit right
 // << , shift 1 bit left
 // >>> , No this operator

@@ -1,6 +1,6 @@
 package binerytree
 
-// Notice
+// Notice: two consideration function: longest diameter vs longest path
 // 1. two vaule need to take care, diameter in current tree and longest path from this node
 //    Use inner function with outside variable to deal the issue
 //    or, return two values in each function call

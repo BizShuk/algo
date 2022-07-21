@@ -1,0 +1,21 @@
+Algorithm:
+    Array:
+        ☐ permutation
+        ☐ combination
+    Linked List:
+        ☐ reverse linked list in-place, with head or from middle
+    Palindrome:
+        ☐ simple
+    Stack:
+        ☐ mon stack = priority queue =
+    Tree:
+        ☐ DFS by stack
+        ☐ BFS by queue
+        ☐ pre-order
+        ☐ post-order
+        ☐ in-order
+    queue:
+    heap:
+        ☐ two heap
+        ☐ minheap to keep top-N largerest number
+        ☐ maxheap to keep top-N smallest number

@@ -1,6 +1,6 @@
 package uncatagory
 
-// Notice:
+// Notice: byte(uint8) vs rune(int32)
 // byte(uint8) is from s[i]
 // rune(int32) is from for range value
 

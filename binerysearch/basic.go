@@ -1,6 +1,6 @@
 package binerysearch
 
-// # Notice:
+// Notice: two pointers basic, indexs/2
 // 1. when moving left pointer and right pointer, make sure add/minus 1
 // 2. (left pointer + right pointer)/2 if the sum is odd, result will be the left pointer(less)
 

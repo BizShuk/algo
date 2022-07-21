@@ -1,6 +1,6 @@
 package binerytree
 
-// Notice
+// Notice: tree node could be nil
 // 1. root could nil
 
 func maxDepth(root *Node) int {
