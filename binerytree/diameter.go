@@ -29,10 +29,3 @@ func diameterOfBinaryTree(root *Node) int {
 	dfs(root)
 	return maxDiameter - 1
 }
-
-func Max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
-}

@@ -7,7 +7,7 @@ Algorithm:
     Palindrome:
         ☐ simple
     Stack:
-        ☐ mon stack = priority queue =
+        ✔ Monotonic Stack, find next bigger/smaller number @done(22-07-23 22:27)
     Tree:
         ☐ DFS by stack
         ☐ BFS by queue

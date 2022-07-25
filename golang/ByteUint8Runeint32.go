@@ -5,7 +5,7 @@ import (
 	"unicode"
 )
 
-func main() {
+func CharMain() {
 	s := "1234abcdABCD"
 	// s[] is byte == uint
 	// for i,e := range s,   e is rune = int32

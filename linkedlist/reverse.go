@@ -1,10 +1,10 @@
 package linkedlist
 
-// Notice: tip for linked list
+// Notice: [Pattern], Tip [LinkedList]
 // By creating a fake node ahead of 'head' node
 // It makes the algo more concise
 
-func Reverse(head *Node) *Node {
+func Reverse(head *Node) *Node { // Return: tail node
 	var prev *Node
 
 	for head != nil {

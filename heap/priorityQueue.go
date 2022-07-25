@@ -54,11 +54,6 @@ func (pq *PriorityQueue) update(item *Item, value int, priority int) {
 	// heap.Fix(pq, item.index)
 }
 
-func main() {
-	// fmt.Println(topKFrequent([]int{1, 2, 3, 4, 5}, 2))
-	fmt.Println(topKFrequent([]int{1, 1, 1, 1, 2, 2, 3, 2, 3, 4, 5}, 3))
-}
-
 func topKFrequent(nums []int, k int) []int {
 	freqCounter := make(map[int]int)
 
@@ -88,5 +83,6 @@ func topKFrequent(nums []int, k int) []int {
 	for i := 0; len(pq) != 0; i++ {
 		result[i] = heap.Pop(&pq).(*Item).value
 	}
-	return sort.Reverse(result)
+	sort.Sort(sort.Reverse(sort.IntSlice(result)))
+	return result
 }

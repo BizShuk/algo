@@ -5,11 +5,20 @@ import (
 	"sort"
 )
 
-// Notice: type alias for underlying method
+// Notice: type alias for underlying method #test123
 // No underlying type method call unless you declar it
 type x sort.IntSlice
 
-func main() {
+// Notice: empty concrete type struct with interface
+type y struct {
+	sort.Interface
+}
+
+func convertY(data sort.Interface) sort.Interface {
+	return y{data}
+}
+
+func InterfaceMain() {
 	a := []int{1, 2, 3, 4}
 	fmt.Println(a)
 	var b x = x(sort.IntSlice(a))
@@ -28,8 +37,7 @@ func main() {
 	w2 := convertY(w1)
 	fmt.Println(w2)
 
-	var w3 y // w3 : y
-	w3 = convertY(w1).(y)
+	var w3 y = convertY(w1).(y) // w3 : y
 	fmt.Println(w3)
 
 	var w4 sort.Interface = w1 // w5 : y from sort.Interface
@@ -42,13 +50,4 @@ func main() {
 	// w7 : sort.IntSlice from y  // Notice: w1 is assigned to y.Interface, not y
 	var w7 sort.IntSlice = w6.Interface.(sort.IntSlice)
 	fmt.Println(w7)
-}
-
-// Notice: empty concrete type struct with interface
-type y struct {
-	sort.Interface
-}
-
-func convertY(data sort.Interface) sort.Interface {
-	return y{data}
 }

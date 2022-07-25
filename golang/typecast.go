@@ -16,12 +16,12 @@ type S3 struct {
 	S1
 }
 
-type S1alias S1
+// type S1alias S1
 
-type S4 struct {
-}
+// type S4 struct {
+// }
 
-func main() {
+func TypeCastingMain() {
 	a := S1{"10", 10} // S1 init
 	fmt.Println("a", a)
 	b := S2(a) // cast S1 to S2
