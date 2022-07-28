@@ -1,6 +1,9 @@
 package linkedlist
 
 type Node struct {
-	Val  int
-	Next *Node
+	Val    int
+	Key    int
+	Prev   *Node
+	Next   *Node
+	Random *Node
 }

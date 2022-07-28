@@ -5,8 +5,7 @@ import "sort"
 // Notice: condition boundary and using continue/break if the flow should not execute any more
 // For i, i+= 1 and move forward if duplicate
 // For lp, it just need to handle if sum == 0 for duplicate case
-
-func threeSum(nums []int) [][]int {
+func ThreeSum(nums []int) [][]int {
 	result := [][]int{}
 	sort.Ints(nums)
 

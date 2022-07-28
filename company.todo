@@ -1,0 +1,28 @@
+CHC:
+    stack:  Scrum, AWS, Golang, Java (Spring Boot, MVC, Batch, Data), ElasticSearch, React
+    ✔ Convinced senior director when commenting new rules should have proper notice. 14:42)
+    ✔ Satisfy geek staff engineer on code review just by telling to junior developer how to do
+    Projects:
+        ✔ Lead one team around 5p and coordinate with other teams inside/outside department
+        ✔ Assess interviewees tech level from junior to lead level around 30 rounds, forward 10 to next
+        ✔ Async file event batch process(S3)
+        ✔ User engagement service (Pinpoint, CloudFront)
+        ✔ Log alerting(CloudWatch, SNS)
+        ✔ Enterprise solutions migration (AWS, Apigee)
+        Frameworks:
+            ✔ Lambda
+            ✔ Event Annotation
+            ✔ Spring Secret Manager plugin
+            ✔ EventBus
+TSMC:
+    stack: K8S(Docker, Istio, EFK, prometheus, Grafana, Argo, Nats), Node, Redis, Azure DevOps
+    ✔ Promote Scrum methodology
+    ✔ Architect AI Vision platform including security
+    ✔ Nodejs + Fasity + Mongo with best practice on code
+        (most of function less than 20~30lines,95% coverage)
+    ✔ k8s + Prometheus + Grafana + EFK + Istio + Kong + NATS
+    ✔ Operation (Error SOP with notification)
+    Project:
+        ✔ GPU job scheduler
+        ✔ PoC tools (Kong API gateway, Nats)
+        ✔ CI/CD flow on Azure DevOps in TSMC

@@ -1,0 +1,62 @@
+
+General:
+    ☐ Microservice architecture
+    ☐ Database (relational/distributed)
+    ☐ Best Practices (SOLID Principles ,TDD, etc) and more depending on your experience.
+    ☐ Thread/Thread Pool
+    ☐ http協議原理
+    ☐ ssh免密登錄
+    ☐ 多線程相關內容, 能夠靈活運用synchronized和ThreadLocal 來處理多線程環境下特定的業務場景
+
+Golang:
+    ☐ goroutine vs thread
+    ☐ Golang基礎和原理, 要能說出設計的實現原理
+    channel:
+        blocking:
+        non-blocking:
+    defer:
+
+Nodejs:
+    jest, React-Redux, TypeScipt, Fastify
+
+Java:
+    SpringBoot, Lambda framework, Event Annotation, Secret Manager
+
+Sql:
+    ☐ TableIndex
+    ☐ 以情境題考驗你對cache跟DB之間操作的了解???
+    ☐
+
+NoSql:
+
+K8s:
+    Istio:
+        Service Mesh:
+        Virtual Service:
+    Ingress:
+    Deployment:
+        Replica:
+    Servie:
+        Headless Service:
+    Config Management:
+        ☐ ConfigMap
+        ☐ Secret
+        ☐ Vault
+AWS:
+    EC2:
+    ECS:
+    CloudFormation:
+        replace by terraform
+    Network:
+        ☐ Security group
+        ☐ ACL
+    Lambda:
+        ☐ timeout, retry
+    LoadBalancer:
+        ☐ TargetGroup == Selector in k8s
+        ☐ ALP
+        ☐ CLP
+    Config Management:
+        ☐ Secret Manager
+        ☐ Parameter Store
+

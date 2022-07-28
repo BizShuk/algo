@@ -1,6 +1,6 @@
 package linkedlist
 
-// Notice: caution for list operartion
+// Notice: [Important] Caution of LinkedList op. Just like fakeHead, fakeTail works in doulbe LinkedList
 
 type LRUCache struct {
 	Cap   int
@@ -10,8 +10,9 @@ type LRUCache struct {
 }
 
 func Constructor(capacity int) LRUCache {
-	head := &Node{}
-	return LRUCache{Cap: capacity, Cache: map[int]*Node{}, Head: head, Tail: head}
+	head, tail := &Node{}, &Node{}
+	head.Next, tail.Prev = tail, head
+	return LRUCache{Cap: capacity, Cache: map[int]*Node{}, Head: head, Tail: tail}
 }
 
 func (this *LRUCache) Get(key int) int {
@@ -24,33 +25,34 @@ func (this *LRUCache) Get(key int) int {
 }
 
 func (this *LRUCache) Remove(node *Node) {
-	delete(this.Cache, node.Key)
+	key := node.Key
+	if _, ok := this.Cache[key]; !ok {
+		return
+	}
+
+	node = this.Cache[key]
+	delete(this.Cache, key)
 
 	prev, next := node.Prev, node.Next
-	prev.Next = next
-	if next != nil {
-		next.Prev = prev
-	}
-
-	if this.Tail == node {
-		this.Tail = prev
-	}
-
+	prev.Next, next.Prev = next, prev
 }
+
 func (this *LRUCache) Insert(node *Node) {
-	this.Tail.Next, node.Prev = node, this.Tail
-	this.Tail = node
+	prev := this.Tail.Prev
+
+	node.Next, this.Tail.Prev = this.Tail, node
+	prev.Next, node.Prev = node, prev
+
 	this.Cache[node.Key] = node
 }
 
 func (this *LRUCache) Put(key int, value int) {
 	node := &Node{Key: key, Val: value}
 
-	if v, ok := this.Cache[key]; ok { // remove this key if exist
-		this.Remove(v)
-	} else if len(this.Cache) == this.Cap {
+	this.Remove(node)
+	this.Insert(node)
+
+	if len(this.Cache) > this.Cap {
 		this.Remove(this.Head.Next)
 	}
-
-	this.Insert(node)
 }

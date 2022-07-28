@@ -5,7 +5,7 @@ package binerysearch
 // Notice: match and moving condition, especially for equal scenario.
 // When required hour matched( <= h), slow speed (rp = mp -1) to find more smaller solutions
 
-func minEatingSpeed(piles []int, h int) int {
+func MinEatingSpeed(piles []int, h int) int {
 	minEatingRate := 0
 
 	for _, pile := range piles {

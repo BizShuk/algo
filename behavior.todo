@@ -1,0 +1,34 @@
+Behavioral & Culture Fit:
+    ☐ https://zhuanlan.zhihu.com/p/40915843
+    Mentoring:
+        ☐ question style, refactor AWS IAM configuration structure with minimal privilege
+        ☐ keyword, visitor pattern
+        ☐ talk about concept/principles
+    Team Conflict:
+        ☐ selecting stories, debate and elaborate the reason he/she should take it
+        ☐ late meeting attempt, ask,
+        ☐ small design conflict if not affecting schedule.
+        ☐ misunderstand, => just explain in details
+    Strong Disagreement:
+        ☐ very bad design and very self-opinioned person.  by talking to manager to have agreement first.
+    Work Distribution ??:
+        ☐ do with priority and dependency first
+    Past Mistake:
+        ☐ limited vision without any advise
+        ☐ mount stupid, even do best under knowledge I have in that time.
+    Challenging Project:
+        ☐ AWS Lambda framework. this is first time adapt microservice. people face a lot of problem.
+    just migrate same structure to lambda, how to sync back to legacy service
+    Production Outage:
+        ☐ on-call ease down the severity level, collect information. Feature-toggle is used, but i think it depends on organizationi structure. Configuration is usually non-developer(production engineer, operation)
+    Strengths & Improvement:
+        ☐ self-organized,
+        ☐ communication since I start moving from engineer to manager (maybe) website theengineermanager
+    Comfort Zone:
+        ☐ I feel confortable if I do something for long time. But even so, I still could improve coding/application along with engineering.
+        ☐ When do I felt uncomfortable? works is flooding in without priority and properly scheduling. In the beginning, it might just little bit overwhelmed. As long as the time going, I will start to debate/advocate/defense for the team. For example, some new coding style is not announced, I said people don't know about that. Instead of putting in code review, to have a new story to change that. fit scrum.
+
+
+
+
+

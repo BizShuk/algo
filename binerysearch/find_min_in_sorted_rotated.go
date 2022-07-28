@@ -4,7 +4,7 @@ package binerysearch
 // Assume finding minimum by going left (rp = mp - 1)
 // address exception case first which left rotated
 
-func findMin(nums []int) int {
+func FindMin(nums []int) int {
 	lp, rp := 0, len(nums)-1
 
 	min := 5001

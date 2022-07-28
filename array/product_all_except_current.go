@@ -2,7 +2,7 @@ package array
 
 // Notice: interesting flow of product
 
-func productExceptSelf(nums []int) []int {
+func ProductExceptSelf(nums []int) []int {
 	product := 1
 	result := make([]int, len(nums))
 

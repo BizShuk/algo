@@ -1,21 +1,65 @@
 Algorithm:
     Array:
-        ☐ permutation
-        ☐ combination
+        ☐ Quicksort
     Linked List:
         ☐ reverse linked list in-place, with head or from middle
-    Palindrome:
-        ☐ simple
     Stack:
-        ✔ Monotonic Stack, find next bigger/smaller number @done(22-07-23 22:27)
+        ✔ Monotonic Stack, find next bigger/smaller number
     Tree:
-        ☐ DFS by stack
-        ☐ BFS by queue
-        ☐ pre-order
-        ☐ post-order
-        ☐ in-order
-    queue:
+    Queue:
     heap:
-        ☐ two heap
+        ☐ Two heap for medium value  max < min (not, min < max) and balancing
         ☐ minheap to keep top-N largerest number
         ☐ maxheap to keep top-N smallest number
+    DP:
+        ☐ Use temporary variables to calculate current value
+        ☐ Rack up slice to memorize previous elements
+    BFS:
+        ☐ [iterative] push node to queue and remove one by one
+    DFS:
+        ☐ [recursive] use tree node structure, go as deep as posible
+        ☐ [iterative] push current node to stack and pop one by one
+    Two Pointers:
+        ☐ Move pointers based on contraint (window size, sum, ...etc)
+        ☐ Check equal case when moving pointers
+        ☐
+Launguage:
+    Golang syntax check:
+        ☐ check fmt remove
+        ☐ check import correct
+        ☐ check unused variables
+        ☐ Don't optimize complex if-else condition in first place. ref: [FindTargetInSortedRotated](../binerysearch/find_target_in_sorted_rotated.go)
+        ☐ strings.Compare() 1 = true, -1 = false, 0 = equal
+        ☐ rotation:  (byte-base(65 or 97)+rotation)%26+base
+    Comparsion:
+        ☐ Levarage Max for maximum replacement
+        if max < xxx { max = xxx }  => max = Max(max, xxx)
+    Ascii code:
+        Common code:
+            ☐ 0(48) -> 9(57)
+            ☐ A(65) -> Z(90)
+            ☐ a(97) -> z(122)
+            ☐ (40 )41
+            ☐ [91 ]93
+            ☐ {123 }125
+        String comparison:
+            ☐ gg > gG     103,103 > 103,71
+            ☐ gg1 > gg    103,103,49 > 103,103
+
+TODO:
+    # TODO: Manacher's algorithm:
+        is used to find the longest palindromic substring in any string. It is required to solve sub-problems of some very hard problems. The problem statement it solves is: Given a string 's' with the length of 'n'. Find the longest palindromic substring in the given string. A string is a palindrome when it is equal to the reverse of itself.
+
+        Manacher's algorithm was invented by Manacher for listing all the palindromes that appear at the start of any given string, it was later observed that the same algorithm can be used to find the longest palindromic substring of any string in linear time.
+
+    # TODO: Kadane's algorithm:
+    # TODO: Advanced Algorithms (COMPSCI 224):
+        https://www.youtube.com/watch?v=0JUN9aDxVmI&list=PL2SOU6wwxB0uP4rJgf5ayhHWgw7akUWSf&index=3
+    # TODO: Predecessor problem:
+        https://www.wikiwand.com/en/Predecessor_problem
+    # TODO: Self-balancing binary search tree:
+        https://www.wikiwand.com/en/Balanced_binary_search_tree
+    # TODO: Fusion tree:
+        https://www.wikiwand.com/en/Fusion_tree
+    # TODO: Nearest neighbor search (NNS)
+        https://www.wikiwand.com/en/Nearest_neighbor_search

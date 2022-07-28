@@ -1,0 +1,58 @@
+System
+     畫架構圖說明一個你之前做過的專案
+     高併發大流量經驗
+     kafka/redis/microservice經驗
+     Rpc 關於框架細節
+     分布式架構
+
+System Design:
+    ☐ 購買商品限量問題
+    ☐ https://github.com/checkcheckzz/system-design-interview
+    ☐ https://www.interviewbit.com/courses/system-design/
+    ☐ https://github.com/donnemartin/system-design-primer#credits
+    Resilient:
+        Fault Tolerance:
+            ☐ Availability
+            ☐ Recoverability
+            ☐ Non-volatile storage
+            ☐ Repliaction
+            ☐ WAL, Write Ahead Log
+            ☐ Snapshot
+            ☐ Synchronize writing to disk
+            ☐ fail-stop failure => server crush, not app bug
+
+        Availability:
+            ☐ Load Balance
+            ☐ Replication
+            ☐ Service Recovery
+            ☐ Consensus (ZooKeeper, etcd)
+    Scalability:
+
+
+    Split Brain:
+        ☐ caused by network partition
+        ☐ lease mechanism can let both master/primary know the operation should fail, like uncommited transaction without commit/rollback then DB rollback automatically after certain period.
+
+
+
+    replication:
+        ☐ state transfer => memory, cons: large
+
+- repliacted state machine => operation, external influence come in like Now() instruction problem, pros: op is small
+    what's states?
+    - P/B sync
+    - cut-over, 切換 master -> slave
+    - anomalies
+    - new replicas
+
+
+Non-deterministic event
+- inputs-packet-data interupt
+- weird instruction, gettime, randomnumber generator
+- multicore
+
+
+incremental problem by network delay with replicas => casue replica or new master has different incremental id than original primary
+primary send back output util replica acknowledge it receive the message.
+
+

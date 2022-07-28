@@ -34,7 +34,7 @@ func GroupAnagrams(strs []string) [][]string {
 	return anagrams
 }
 
-func hashWord(str string) string {
+func HashWord(str string) string {
 	x := make([]byte, 26)
 	for _, c := range str {
 		x[c-97] += 1

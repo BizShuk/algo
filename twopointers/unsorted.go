@@ -1,16 +1,15 @@
 package twopointers
 
-// Notice: Levarage Max for maximum replacement
-// Notice: two pointers tips: move pointer which has m/l
-// if max < xxx { max = xxx }  => max = Max(max, xxx)
+import "github.com/bizshuk/algo/util"
 
-func maxArea(heights []int) int {
+// [Variant]: [TwoPointers] move less value pointer fisrt
+func MaxArea(heights []int) int {
 	mostWater := 0
 	lp, rp := 0, len(heights)-1
 
 	for lp < rp {
-		water := Min(heights[lp], heights[rp]) * (rp - lp)
-		mostWater = Max(mostWater, water)
+		water := util.Min(heights[lp], heights[rp]) * (rp - lp)
+		mostWater = util.Max(mostWater, water)
 
 		if heights[lp] > heights[rp] {
 			rp -= 1
@@ -20,18 +19,4 @@ func maxArea(heights []int) int {
 
 	}
 	return mostWater
-}
-
-func Max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
-}
-
-func Min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
 }

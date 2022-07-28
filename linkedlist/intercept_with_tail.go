@@ -1,6 +1,6 @@
 package linkedlist
 
-func reorderList(head *Node) {
+func ReorderList(head *Node) {
 	fakeHead := &Node{Next: head}
 
 	f, s := fakeHead, fakeHead

@@ -5,6 +5,8 @@ import (
 	"unicode"
 )
 
+// Notice: byte(uint8) from s[i] vs rune(int32) from foreach
+
 func CharMain() {
 	s := "1234abcdABCD"
 	// s[] is byte == uint
