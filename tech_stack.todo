@@ -8,6 +8,29 @@ General:
     ☐ ssh免密登錄
     ☐ 多線程相關內容, 能夠靈活運用synchronized和ThreadLocal 來處理多線程環境下特定的業務場景
 
+Network:
+    Network Mask:
+
+    TCP:
+        ☐ OSI model vs TCP/IP model
+        OSI - Physical, Data Link, Network, Transport, Session, Presentation, Application
+        TCP/IP - Network Access, Internet, Transport, Application
+        ☐ ordered
+        ☐ failure check and resend
+        Use case:
+            ☐ Transaction
+    UDP:
+        ☐ unordered
+        Use case:
+            ☐ Video
+
+
+HTTP:
+    Cache:`
+        ✔ @critical
+    Rest:
+        Idempotent OP:
+            ☐ Get/Post/Put/Delete
 Golang:
     ☐ goroutine vs thread
     ☐ Golang基礎和原理, 要能說出設計的實現原理
@@ -22,14 +45,22 @@ Nodejs:
 Java:
     SpringBoot, Lambda framework, Event Annotation, Secret Manager
 
+
 Sql:
     ☐ TableIndex
     ☐ 以情境題考驗你對cache跟DB之間操作的了解???
     ☐
 
 NoSql:
+    CPA:
+        Two out of three
+        ☐ Consistency
+        ☐ (Network) Partition
+        ☐ Availability
+
 
 K8s:
+    Scaling, Segregate physical infra and service
     Istio:
         Service Mesh:
         Virtual Service:

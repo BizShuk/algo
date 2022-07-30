@@ -21,22 +21,31 @@ System Design:
             ☐ Synchronize writing to disk
             ☐ fail-stop failure => server crush, not app bug
 
+            ☐ Health Check
         Availability:
             ☐ Load Balance
             ☐ Replication
             ☐ Service Recovery
             ☐ Consensus (ZooKeeper, etcd)
     Scalability:
-
-
+        Stress Testing:
     Split Brain:
         ☐ caused by network partition
         ☐ lease mechanism can let both master/primary know the operation should fail, like uncommited transaction without commit/rollback then DB rollback automatically after certain period.
-
-
-
-    replication:
+    Replication:
         ☐ state transfer => memory, cons: large
+
+    Operation Process:
+        ☐ Alerting to right person with proper information including SOP
+        ☐ Proper error message, severity, and channel
+    Error Hanlding:
+        ☐ Coordination ID
+        ☐ Monitoring
+        ☐ Error Code
+
+
+
+
 
 - repliacted state machine => operation, external influence come in like Now() instruction problem, pros: op is small
     what's states?

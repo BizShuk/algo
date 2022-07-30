@@ -12,13 +12,19 @@ Algorithm:
         ☐ minheap to keep top-N largerest number
         ☐ maxheap to keep top-N smallest number
     DP:
-        ☐ Use temporary variables to calculate current value
-        ☐ Rack up slice to memorize previous elements
+        ✔ Memorization
+        ✔ Bottom-Up
+        dp[i] = dp[i-1] + dp[i-2] , i = 1 -> n
+        ✔ Use temporary variables to calculate current value
+        c1, c2 = c2, c1+c2
+        ☐ Top-Down (Duplication calculation)
+        return dp(i-1) + dp(i-2)
     BFS:
         ☐ [iterative] push node to queue and remove one by one
     DFS:
         ☐ [recursive] use tree node structure, go as deep as posible
         ☐ [iterative] push current node to stack and pop one by one
+        ☐ Variant on Array, choose or not on each element
     Two Pointers:
         ☐ Move pointers based on contraint (window size, sum, ...etc)
         ☐ Check equal case when moving pointers
