@@ -1,7 +1,7 @@
 package util
 
 // [Pattern]: Abs
-func Abs(x, y int) int {
+func Abs[K Number](x, y K) K {
 	if x > y {
 		return x - y
 	}

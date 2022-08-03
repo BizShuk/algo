@@ -1,7 +1,7 @@
 package util
 
 // [Pattern]: Min
-func Min(x, y int) int {
+func Min[K Number](x, y K) K {
 	if x < y {
 		return x
 	}
@@ -9,7 +9,7 @@ func Min(x, y int) int {
 }
 
 // x might be initial value(invalid)
-func MinPositive(x, y int) int {
+func MinPositive[K Number](x, y K) K {
 	if x < 0 {
 		return y
 	}
