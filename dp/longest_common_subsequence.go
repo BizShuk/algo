@@ -5,7 +5,10 @@ import "github.com/bizshuk/algo/util"
 // Longest Common Subsequence
 
 // [Pattern]: [Longest Common Subsequence DP] find longest common subsequence in two strings.
-// abcde, acz => ac => length = 2
+// ex: bcde , ace
+// [Logic]:
+// b != a => Max(sub(cde,ace), sub(bcde,ce))
+// c == c => sub(de, e)
 func longestCommonSubsequence(text1 string, text2 string) int {
 	dp := make([][]int, len(text1)+1)
 	for i := range dp {

@@ -24,6 +24,7 @@ func CountPalindrom(s string, l int, r int) int {
 }
 
 // [Pattern]: [Palindrom DP] Count all palindrom substrings
+// [Way 1]: i and length
 // Check each substring by
 // 	  1. First and last char of substring are equal. s[i] == s[i+l]
 // 	  2. Narrower substring is palindrom.
@@ -31,6 +32,7 @@ func CountPalindrom(s string, l int, r int) int {
 // => dp[1][2] = true if
 //   - s[i] (1st a) ==  s[i+l] (2nd a)
 //   - dp[i+1][l-2] = dp[2][0] == true
+// [Way2]: i and j
 func CountPalindromSubstrings_DP(s string) int {
 	count := 0
 

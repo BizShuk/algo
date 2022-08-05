@@ -1,6 +1,10 @@
 package dp
 
-import "github.com/bizshuk/algo/util"
+import (
+	"sort"
+
+	"github.com/bizshuk/algo/util"
+)
 
 // [Pattern]: [Combination DP] How many ways of Coin Change
 // [DP solution]: bottom-up with memorization
@@ -118,4 +122,32 @@ func WordBreak_TD(s string, wordDict []string) bool {
 		}
 	}
 	return false
+}
+
+// [Variant]: [Combination DP] Coin change with unlimited coins
+func CoinChangeII(amount int, coins []int) int {
+	sort.Ints(coins)
+	if amount == 0 {
+		return 1
+	}
+	dp := make([][]int, len(coins)+1)
+	for i := range dp {
+		dp[i] = make([]int, amount+1)
+	}
+
+	for i := len(coins) - 1; i >= 0; i-- {
+		coin := coins[i]
+		for j := 1; j <= amount; j++ {
+			if j-coin == 0 {
+				dp[i][j] = 1
+				continue
+			}
+			dp[i][j] = dp[i+1][j]
+			if j-coin >= 0 {
+				dp[i][j] += dp[i][j-coin]
+			}
+		}
+	}
+
+	return dp[0][amount]
 }
