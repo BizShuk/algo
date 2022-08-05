@@ -1,16 +1,14 @@
 package dp
 
-// Notice: [Combination DP] edge case
+// Notice: [Combination DP] Number Decode for alphabet
+// edge case:
 // 27 28 29(take one/two for 2, take one for 7 8 9)
 // 30 40 50 60 70 80 90(take two)
 // 3,4,5,6,7,8,9(take two with before, or take one)
 func NumDecodings(s string) int {
-
-	// dp
 	countArea := []int{}
 
 	i := 0
-
 	c1, c2 := 0, 1
 
 	for i < len(s) {

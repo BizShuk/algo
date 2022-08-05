@@ -1,6 +1,6 @@
-package main
+package golang
 
-func main() {
+func Main() {
 	InterfaceMain()
 	CharMain()
 	TypeCastingMain()

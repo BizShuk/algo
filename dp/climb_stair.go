@@ -17,7 +17,7 @@ func ClimbStairs(steps int) int {
 	return s2
 }
 
-// [Variant]: [Simple DP] with priority/cost
+// [Variant]: [Simple DP] Climb Stair with priority/cost
 func ClimbStairsWithCost(costs []int) int {
 	c1, c2 := 0, 0
 

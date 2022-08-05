@@ -12,19 +12,28 @@ Algorithm:
         ☐ minheap to keep top-N largerest number
         ☐ maxheap to keep top-N smallest number
     DP:
-        ✔ Memorization
-        ✔ Bottom-Up
-        dp[i] = dp[i-1] + dp[i-2] , i = 1 -> n
-        ✔ Use temporary variables to calculate current value
-        c1, c2 = c2, c1+c2
-        ☐ Top-Down (Duplication calculation)
+        ✔ [Recursive] Top-Down (Duplication calculation) + Memorization
         return dp(i-1) + dp(i-2)
+        ✔ [Iterative] Bottom-Up = Tabulation
+        ex: dp[i] = dp[i-1] + dp[i-2] , i = 1 -> n
+        It can use sum/ as dp column  1 ~ sum
+        ex: c1, c2 = c2, c1+c2
+        ✘ If the original problem requires "ALL" subproblems to be solved, tabulation usually outperformes memoization by a constant factor.
+        ✘ If only "SOME" of the subproblems need to be solved for the original problem to be solved, then memoization is preferrable since the subproblems are solved lazily.
+
+
     BFS:
         ☐ [iterative] push node to queue and remove one by one
+        ☐ Only keep stack on previous one node
     DFS:
         ☐ [recursive] use tree node structure, go as deep as posible
         ☐ [iterative] push current node to stack and pop one by one
+        ☐ Keep previous stack on the line
         ☐ Variant on Array, choose or not on each element
+        ☐ if look for list of result, combination, check some conditions meet and put the result into array outside of function
+    BackTracking:
+        ☐ Compare to DFS, BackTracking will stop if condition is matched (won't go to all leafs)
+        ☐ Don't forget about brute force
     Two Pointers:
         ☐ Move pointers based on contraint (window size, sum, ...etc)
         ☐ Check equal case when moving pointers

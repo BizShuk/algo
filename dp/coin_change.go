@@ -2,16 +2,8 @@ package dp
 
 import "github.com/bizshuk/algo/util"
 
-// [Variant]: [Combination DP] Coin Change
-// 1. Greedy solution
-// 	拿最大的幣值先取 再換小一點的  湊不齊 一個一個慢慢算
-// 2. DP
-
-// 3. Recursive
-// 	curr := amount
-// 	return Min(DP(curr-c1),DP(curr-c2),...) + 1
-
-// DP solution, bottom-up with memorization
+// [Pattern]: [Combination DP] How many ways of Coin Change
+// [DP solution]: bottom-up with memorization
 func CoinChange(coins []int, amount int) int {
 	// 0 at index 0 is valid
 	// 0 at index non-zero is invalid(no change way)
@@ -24,11 +16,11 @@ func CoinChange(coins []int, amount int) int {
 	for i := 1; i <= amount; i++ {
 		min := 100005
 		for _, c := range coins {
-			if i-c < 0 { // can't change
+			if i < c { // can't change
 				continue
 			}
 
-			if i-c == 0 { // avoid use amount 0 to calculate ambiguous case
+			if i == c { // avoid use amount 0 to calculate ambiguous case
 				dp[i] = 1
 				break
 			}
@@ -48,7 +40,7 @@ func CoinChange(coins []int, amount int) int {
 	return dp[amount]
 }
 
-// Top-down recursive: Time exceed if no memorization
+// [Variant]: [Combination BT]
 func CoinChange_recursive(coins []int, amount int) int {
 	if amount == 0 {
 		return 0
@@ -78,7 +70,7 @@ func CoinChange_recursive(coins []int, amount int) int {
 	return min + 1
 }
 
-// [Variant]: [Combination DP] word break bottom-up
+// [Variant]: [Combination DP] Could Work Break by dictionary
 func WordBreak_BU(s string, wordDict []string) bool {
 	if s == "" {
 		return true

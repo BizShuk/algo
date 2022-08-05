@@ -38,6 +38,11 @@ Golang:
         blocking:
         non-blocking:
     defer:
+    Performance:
+        ☐ Variables on Stack or Heap => [Escape Analysis]
+        function create Stack, Variable sharing down will typically stay in Stack
+        Only those variables stay in Stack dangers the use in the future. It will in Heap
+        go build -gcflag => go tool compile -m => show optimization decision
 
 Nodejs:
     jest, React-Redux, TypeScipt, Fastify

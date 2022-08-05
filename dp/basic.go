@@ -3,7 +3,8 @@ package dp
 import "github.com/bizshuk/algo/util"
 
 // Notice: Take anything before it to calculate
-// [Pattern]: [Simple DP]
+// [Pattern]: [Simple DP] RobHouse
+// Climbing Stair/Fibonacci are in this category
 func Rob(nums []int) int {
 	untake, take := 0, 0
 
@@ -33,7 +34,8 @@ func Rob2(nums []int) int {
 	return max
 }
 
-// [Variant]: [Simple DP] Assume two expressions for non-taking first or last elements
+// [Variant]: [Simple DP] RobHouse with cycle
+// Assume two expressions for non-taking first or last elements
 func RobWithCycle(nums []int) int {
 	if len(nums) == 1 {
 		return nums[0]
