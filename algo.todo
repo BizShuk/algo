@@ -31,6 +31,13 @@ Algorithm:
         ☐ Keep previous stack on the line
         ☐ Variant on Array, choose or not on each element
         ☐ if look for list of result, combination, check some conditions meet and put the result into array outside of function
+    Dijkstra's shortest path:
+        BFS combines with Min-Heap to look minimum edge first.
+        Push nextNode into it and pop one to process further.
+    DAG:
+        Post-Order effect =>. The deeper node will finish before shallower node
+    Topological Sort:
+        Direct Acycle Graph
     BackTracking:
         ☐ Compare to DFS, BackTracking will stop if condition is matched (won't go to all leafs)
         ☐ Don't forget about brute force
