@@ -1,6 +1,0 @@
-package gomock
-
-// [Pattern]: [Go Mock Testing] Mock HTTP Call
-// 1. Use httptest library
-// 2. Use Service Interface to mock http call
-// 3. Use RoundTrip inject into http request
