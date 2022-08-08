@@ -1,6 +1,6 @@
 package dp
 
-// Notice: [Combination DP] Number Decode for alphabet
+// [Notice]: [Combination DP] Number Decode for alphabet
 // edge case:
 // 27 28 29(take one/two for 2, take one for 7 8 9)
 // 30 40 50 60 70 80 90(take two)

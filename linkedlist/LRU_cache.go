@@ -1,6 +1,6 @@
 package linkedlist
 
-// Notice: [Important] Caution of LinkedList op. Just like fakeHead, fakeTail works in doulbe LinkedList
+// [Notice]: [Important] Caution of LinkedList op. Just like fakeHead, fakeTail works in doulbe LinkedList
 
 type LRUCache struct {
 	Cap   int

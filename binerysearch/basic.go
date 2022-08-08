@@ -1,17 +1,14 @@
 package binerysearch
 
-// Notice:
-// [Pattern]: [TwoPointers]
+// [Pattern]: [TwoPointers] Binary Search
 // 1. when moving left pointer and right pointer, make sure add/minus 1
 // 2. (left pointer + right pointer)/2 if the sum is odd, result will be the left pointer(less)
-
-// Notice: Binary Search: for l "<=" r,
 
 // return index if found, otherwise return -1
 func FindTarget(s []int, target int) int {
 	l, r := 0, len(s)-1
 
-	for l <= r {
+	for l <= r { // [tips]: Binary Search: for l "<=" r,
 		m := (l + r) / 2
 		if s[m] == target { // do something or return
 			return m // might continue execute instead break/return

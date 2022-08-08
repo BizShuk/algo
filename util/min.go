@@ -1,6 +1,6 @@
 package util
 
-// [Pattern]: Min
+// [Pattern]: [Go Util] Min
 func Min[K Number](x, y K) K {
 	if x < y {
 		return x

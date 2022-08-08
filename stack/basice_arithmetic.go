@@ -2,9 +2,9 @@ package stack
 
 import "strconv"
 
-// Notice: 1. Leverage existing space for tmp result.
-// Notice: 2. Clear what we use string, byte, rune, int, uint8
-// Notice: 3. first class function
+// [Notice]: 1. Leverage existing space for tmp result.
+// [Notice]: 2. Clear what we use string, byte, rune, int, uint8
+// [Notice]: 3. first class function
 
 func add(x, y int) int      { return x + y }
 func minus(x, y int) int    { return x - y }

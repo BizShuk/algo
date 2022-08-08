@@ -1,6 +1,6 @@
 package slidingwindow
 
-// Notice: Sliding Window with left/right pointers
+// [Notice]: Sliding Window with left/right pointers
 func lengthOfLongestSubstring(s string) int {
 	maxLength := 0
 	set := make(map[byte]int)

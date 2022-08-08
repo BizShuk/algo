@@ -2,8 +2,8 @@ package stack
 
 import "sort"
 
-// Notice: How to sort with other same-indexed array
-// Notice: with accending position, the remaining time can be used for whetehr car bump into another
+// [Notice]: How to sort with other same-indexed array
+// [Notice]: with accending position, the remaining time can be used for whetehr car bump into another
 
 type Pair struct {
 	remain   float64

@@ -1,6 +1,6 @@
 package array
 
-// Notice: interesting flow of product
+// [Notice]: interesting flow of product
 
 func ProductExceptSelf(nums []int) []int {
 	product := 1

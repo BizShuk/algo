@@ -1,6 +1,6 @@
 package linkedlist
 
-// Notice:
+// [Notice]:
 // [Pattern]: [Get Nth in LinkedList]
 
 func GetNthNode(head *Node, n int) *Node {

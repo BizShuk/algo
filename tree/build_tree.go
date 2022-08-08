@@ -1,6 +1,6 @@
 package tree
 
-// Notice: Build tree from preorder and inorder
+// [Notice]: Build tree from preorder and inorder
 // PreOrder:
 // - 1st elem of preorder is each root
 // - 1st part after 1st elem is left tree

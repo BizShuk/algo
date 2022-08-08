@@ -1,8 +1,8 @@
 package binerysearch
 
-// Notice: This case won't stop if condition matched, it must find mininum speed under target hour
+// [Notice]: This case won't stop if condition matched, it must find mininum speed under target hour
 // Usually, binary search will stop if target hit
-// Notice: match and moving condition, especially for equal scenario.
+// [Notice]: match and moving condition, especially for equal scenario.
 // When required hour matched( <= h), slow speed (rp = mp -1) to find more smaller solutions
 
 func MinEatingSpeed(piles []int, h int) int {

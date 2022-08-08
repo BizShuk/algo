@@ -1,6 +1,6 @@
 package binerysearch
 
-// Notice: If Condition logic
+// [Notice]: If Condition logic
 // Assume finding minimum by going left (rp = mp - 1)
 // address exception case first which left rotated
 

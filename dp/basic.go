@@ -2,7 +2,7 @@ package dp
 
 import "github.com/bizshuk/algo/util"
 
-// Notice: Take anything before it to calculate
+// [Notice]: Take anything before it to calculate
 // [Pattern]: [Simple DP] RobHouse
 // Climbing Stair/Fibonacci are in this category
 func Rob(nums []int) int {

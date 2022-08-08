@@ -1,6 +1,6 @@
 package binerytree
 
-// Notice: tree node can be nil
+// [Notice]: tree node can be nil
 // 1. root could nil
 func Invert(root *Node) *Node {
 	if root == nil {

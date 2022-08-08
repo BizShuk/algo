@@ -1,6 +1,6 @@
 package linkedlist
 
-// Notice:
+// [Notice]:
 // [Pattern]: [Remove Nth in LinkedList]
 func RemoveNth(head *Node, n int) *Node {
 	p := &Node{Next: head}

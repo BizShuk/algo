@@ -2,7 +2,7 @@ package array
 
 import "sort"
 
-// Notice: string swap, sort.Slice, hash slice
+// [Notice]: string swap, sort.Slice, hash slice
 // 1. string CAN'T swap in-place
 // 2. sort.Slice(sliceVar, func(i int, j int) bool) is in-place
 // 3. string([]rune | []byte) are hash kind value

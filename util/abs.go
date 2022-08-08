@@ -1,6 +1,6 @@
 package util
 
-// [Pattern]: Abs
+// [Pattern]: [Go Util] Abs
 func Abs[K Number](x, y K) K {
 	if x > y {
 		return x - y

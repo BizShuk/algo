@@ -1,6 +1,6 @@
 package array
 
-// Notice: column index of grid is col/3, row index of grid is (row/3)*3. https://leetcode.com/problems/valid-sudoku/
+// [Notice]: column index of grid is col/3, row index of grid is (row/3)*3. https://leetcode.com/problems/valid-sudoku/
 
 func isValidSudoku(board [][]byte) bool {
 

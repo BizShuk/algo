@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-// [Pattern]: [Read stdio]
+// [Pattern]: [Go Read stdio]
 func ReadStdin() string {
 	reader := bufio.NewReader(os.Stdin)
 	text, _ := reader.ReadString('\n')

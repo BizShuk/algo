@@ -1,7 +1,7 @@
 package stack
 
-// Notice: Keep min variable in each element for current scope, new elemenet is new scope
-// Notice: Condition and variables check
+// [Notice]: Keep min variable in each element for current scope, new elemenet is new scope
+// [Notice]: Condition and variables check
 
 type MinStack struct {
 	stack    []int

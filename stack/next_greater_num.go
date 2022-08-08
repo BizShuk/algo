@@ -1,6 +1,6 @@
 package stack
 
-// Notice: Monotonic Stack(know index) ~= Priority Queue(should contain index) ~= Heap
+// [Notice]: Monotonic Stack(know index) ~= Priority Queue(should contain index) ~= Heap
 
 func dailyTemperatures(temperatures []int) []int {
 	stack := []int{}

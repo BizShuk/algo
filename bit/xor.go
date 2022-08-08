@@ -2,7 +2,7 @@ package bit
 
 // Find single number, all are duplicate once except one
 
-// Notice: XOR(^) true-false
+// [Notice]: XOR(^) true-false
 // XOR is
 // true , true , 0
 // true , false, 1

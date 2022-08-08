@@ -1,6 +1,6 @@
 package array
 
-// Notice: bucket sorting without heap, https://leetcode.com/problems/top-k-frequent-elements/submissions/
+// [Notice]: bucket sorting without heap, https://leetcode.com/problems/top-k-frequent-elements/submissions/
 
 func TopKElement(nums []int, k int) []int {
 	freqCounter := make(map[int]int)

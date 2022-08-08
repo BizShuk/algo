@@ -17,7 +17,7 @@ func ReorderList(head *Node) {
 	for h != nil && t != nil { // how h t know they are bypass the other => set its Next to nil
 		merged.Next = h
 		merged = merged.Next
-		h = h.Next // Notice: [LinkedList] might mistake by change node next in sequence operations
+		h = h.Next // [Notice]: [LinkedList] might mistake by change node next in sequence operations
 
 		merged.Next = t
 		merged = merged.Next

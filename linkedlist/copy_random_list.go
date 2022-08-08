@@ -1,7 +1,7 @@
 package linkedlist
 
-// Notice: A mapping between old and new is required
-// Notice: [Variant] In-Place space
+// [Notice]: A mapping between old and new is required
+// [Notice]: [Variant] In-Place space
 // 1. Chain new node after curr old node
 // 2. Find new random node by next node of random node of old node
 

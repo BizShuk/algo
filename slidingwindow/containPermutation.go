@@ -1,9 +1,9 @@
 package slidingwindow
 
-// Notice: When moving left pointer, usually it should less than right pointer
-// Notice: Where to ovve left pointer?
-// Notice: Right pointer loop constraint. usually less than len(input)
-// Notice: flow: since s2 is fixed, Using length of s1 as window move in s2
+// [Notice]: When moving left pointer, usually it should less than right pointer
+// [Notice]: Where to ovve left pointer?
+// [Notice]: Right pointer loop constraint. usually less than len(input)
+// [Notice]: flow: since s2 is fixed, Using length of s1 as window move in s2
 
 func checkInclusion(s1 string, s2 string) bool {
 	if len(s1) > len(s2) {

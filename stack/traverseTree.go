@@ -1,7 +1,7 @@
 package stack
 
 // => How many path could a tree have?
-// Notice: Generate combination "(())" from top-down [unknown tree path]
+// [Notice]: Generate combination "(())" from top-down [unknown tree path]
 
 var size int
 

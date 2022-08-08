@@ -1,6 +1,6 @@
 package util
 
-// [Pattern]: Max
+// [Pattern]: [Go Util] Max
 func Max[K Number](x, y K) K {
 	if x > y {
 		return x
